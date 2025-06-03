@@ -1,4 +1,4 @@
-# Projeto: Plant Manager
+## Projeto: Plant Manager
 
 **Tecnologias utilizadas:**
 
