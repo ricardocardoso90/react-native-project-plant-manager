@@ -4,7 +4,7 @@ Aplicativo desenvolvido com **React Native** e **Expo**, que auxilia no gerencia
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -18,7 +18,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ---
 
-## 📂 Funcionalidades
+## Funcionalidades
 
 - Componentização reutilizável
 - Interface moderna com estilo minimalista
