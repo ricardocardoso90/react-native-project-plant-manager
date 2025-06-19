@@ -7,5 +7,5 @@ export function Routes() {
     <NavigationContainer independent={true}>
       <AppRoutes />
     </NavigationContainer>
-  )
-}
+  );
+};
