@@ -1,10 +1,10 @@
 import { styles } from "./styles";
 import { Entypo } from '@expo/vector-icons';
+import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Image, Text, TouchableOpacity, View } from "react-native";
 
 import wateringPng from '../../assets/watering.png';
-import { useNavigation } from "@react-navigation/native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 
 export function Welcome() {
   const navigation = useNavigation();
@@ -23,8 +23,8 @@ export function Welcome() {
         </Text>
 
         <Image
-          source={wateringPng}
           style={styles.image}
+          source={wateringPng}
           resizeMode="contain"
         />
 
