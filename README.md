@@ -33,5 +33,5 @@ O **Plant Manager** é um app mobile pensado para ajudar na organização e nos 
 
    ```bash
    npm start
-   json-server ./src/services/server.json --host (aqui você coloca seu IP) --port 3333
+   json-server --watch server.json --host (aqui você coloca seu IP) --port 3333
    ```
