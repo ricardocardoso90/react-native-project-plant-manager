@@ -1,26 +1,25 @@
 import { styles } from "./styles";
-import { Header } from "../../components/Header";
+import { useEffect, useState } from "react";
 import { Alert, FlatList, Image, Text, View } from "react-native";
 
-import { useEffect, useState } from "react";
-import { PlantProps, loadPlant, removePlant } from "../../libs/storage";
-import waterdrop from "../../assets/waterdrop.png";
-import { formatDistance } from "date-fns";
 import { pt } from "date-fns/locale";
-import { PlantCardSecundary } from "../../components/PlantCardSecundary";
+import { formatDistance } from "date-fns";
+
 import { Load } from "../../components/Load";
+import { Header } from "../../components/Header";
+import { PlantCardSecundary } from "../../components/PlantCardSecundary";
+
+import waterdrop from "../../assets/waterdrop.png";
+import { PlantProps, loadPlant, removePlant } from "../../libs/storage";
 
 export function MyPlants() {
-  const [myPlants, setMyPlants] = useState<PlantProps[]>([]);
   const [loading, setLoading] = useState(true);
   const [nextWatered, setNextWatered] = useState<string>();
+  const [myPlants, setMyPlants] = useState<PlantProps[]>([]);
 
   function handleRemove(plant: PlantProps) {
     Alert.alert("Remover", `Deseja remover a ${plant.name}?`, [
-      {
-        text: "Não 🙏",
-        style: "cancel",
-      },
+      { text: "Não 🙏", style: "cancel" },
       {
         text: "Sim 🥺",
         onPress: async () => {
@@ -32,22 +31,17 @@ export function MyPlants() {
             if (myPlants.length === 0) {
               setNextWatered("Nenhuma planta cadastrada para regar.");
             } else {
-              const updatedPlants = myPlants.filter(
-                (item) => item.id !== plant.id
-              );
+              const updatedPlants = myPlants.filter((item) => item.id !== plant.id);
               if (updatedPlants.length > 0) {
                 const nextTime = formatDistance(
                   new Date(updatedPlants[0].dateTimeNotification).getTime(),
-                  new Date().getTime(),
-                  { locale: pt }
+                  new Date().getTime(), { locale: pt }
                 );
-                setNextWatered(
-                  `Não esqueça de regar a ${updatedPlants[0].name} à ${nextTime} horas.`
-                );
+                setNextWatered(`Não esqueça de regar a ${updatedPlants[0].name} à ${nextTime} horas.`);
               } else {
                 setNextWatered("Nenhuma planta cadastrada para regar.");
-              }
-            }
+              };
+            };
           } catch (error) {
             console.error("Erro ao remover planta:", error);
             Alert.alert("Não foi possível remover! 🥺");
@@ -74,9 +68,7 @@ export function MyPlants() {
             { locale: pt }
           );
 
-          setNextWatered(
-            `Não esqueça de regar a ${sortedPlants[0].name} à ${nextTime} horas.`
-          );
+          setNextWatered(`Não esqueça de regar a ${sortedPlants[0].name} à ${nextTime} horas.`);
           setMyPlants(sortedPlants);
         } else {
           setNextWatered("Nenhuma planta cadastrada para regar.");
@@ -124,7 +116,7 @@ export function MyPlants() {
             );
           }}
           showsVerticalScrollIndicator={false}
-          // contentContainerStyle={{ flex: 1 }} // Descomente se precisar ajustar o estilo do container
+          contentContainerStyle={{ flex: 1 }}
         />
       </View>
     </View>
