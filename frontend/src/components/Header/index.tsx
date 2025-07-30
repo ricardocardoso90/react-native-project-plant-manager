@@ -1,7 +1,7 @@
 import { styles } from "./styles";
 import { Image, Text, View } from "react-native";
 
-import useImg from '../../assets/ricardo.png';
+import useImg from '../../assets/ricardo.jpg';
 import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
