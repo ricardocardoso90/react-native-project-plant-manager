@@ -1,10 +1,10 @@
-# 🌱 Plant Manager
+# Plant Manager
 
 Aplicativo mobile desenvolvido com **React Native** para ajudar no gerenciamento de cuidados com plantas, permitindo acompanhar horários de rega de forma simples, prática e intuitiva.
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
 * React Native
 * Expo
@@ -12,28 +12,28 @@ Aplicativo mobile desenvolvido com **React Native** para ajudar no gerenciamento
 * Axios
 * React Navigation
 * Async Storage
+* JSON Server (API fake)
 
 ---
 
-## 📱 Sobre o projeto
+## Sobre o projeto
 
-O **Plant Manager** é um aplicativo que auxilia usuários a cuidarem melhor de suas plantas, organizando lembretes de rega e fornecendo uma experiência simples e agradável.
+O **Plant Manager** é um aplicativo que auxilia usuários a cuidarem melhor de suas plantas, organizando lembretes de rega e proporcionando uma experiência simples e agradável.
 
-Os dados são consumidos de uma API e armazenados localmente, permitindo que o usuário acompanhe suas plantas mesmo após fechar o aplicativo.
+A aplicação consome dados de uma API (simulada com JSON Server), permitindo listar plantas e gerenciar informações localmente.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 * Cadastro de plantas
 * Listagem de plantas disponíveis
 * Agendamento de rega
-* Notificações para lembrar de regar
 * Armazenamento local dos dados
 
 ---
 
-## 🚀 Melhorias implementadas
+## Melhorias implementadas
 
 * Organização do código em módulos
 * Tipagem com TypeScript
@@ -42,54 +42,25 @@ Os dados são consumidos de uma API e armazenados localmente, permitindo que o u
 
 ---
 
-## 📚 Aprendizados
+## Aprendizados
 
 Durante o desenvolvimento deste projeto, pude aprofundar conhecimentos em:
 
 * Estruturação de aplicações com React Native
 * Navegação entre telas com React Navigation
 * Consumo de APIs utilizando Axios
-* Gerenciamento de estado na aplicação
 * Persistência de dados com Async Storage
 * Boas práticas de organização de código
 
 ---
 
-## 📸 Screenshots
+### 🌐 Servidor (API fake)
 
-<!-- Adicione aqui imagens do app -->
+Este projeto utiliza o **JSON Server** para simular uma API.
 
-<!-- Exemplo: -->
+```bash id="run2"
+# Instale o JSON Server globalmente (caso não tenha)
+npm install -g json-server
 
-<!-- ![Home](./assets/home.png) -->
-
----
-
-## ⚙️ Como rodar o projeto
-
-```bash
-# Clone o repositório
-git clone https://github.com/ricardocardoso90/react-native-project-plant-manager
-
-# Acesse a pasta
-cd react-native-project-plant-manager
-
-# Instale as dependências
-npm install
-
-# Inicie o projeto
-npx expo start
-```
-
----
-
-## 📄 Licença
-
-Este projeto foi desenvolvido para fins de estudo.
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por Ricardo Cardoso
-🔗 https://github.com/ricardocardoso90
+# Execute o servidor
+json-server ./src/services/server.json --host 0.0.0.0 --port 3333
