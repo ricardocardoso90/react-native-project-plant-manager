@@ -1,37 +1,95 @@
-# Plant Manager
+# 🌱 Plant Manager
 
-O **Plant Manager** é um app mobile pensado para ajudar na organização e nos cuidados com suas plantas.
+Aplicativo mobile desenvolvido com **React Native** para ajudar no gerenciamento de cuidados com plantas, permitindo acompanhar horários de rega de forma simples, prática e intuitiva.
 
-## Funcionalidades
+---
 
-- Selecionar plantas de acordo com o ambiente mais adequado;
-- Visualizar detalhes de cada planta (foto, nome e dicas de cuidados);
-- Definir horários para ser lembrado de cuidar das plantas;
-- Cadastrar novas plantas na sua coleção.
+## 🚀 Tecnologias
 
-## Tecnologias utilizadas
+* React Native
+* Expo
+* TypeScript
+* Axios
+* React Navigation
+* Async Storage
 
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [React Navigation](https://reactnavigation.org/)
-- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
-- [DateTimePicker](https://github.com/react-native-datetimepicker/datetimepicker)
-- [Lottie](https://airbnb.io/lottie/#/)
-- [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/)
+---
 
-## Instalação
+## 📱 Sobre o projeto
 
-1. Instale as dependências:
+O **Plant Manager** é um aplicativo que auxilia usuários a cuidarem melhor de suas plantas, organizando lembretes de rega e fornecendo uma experiência simples e agradável.
 
-   ```bash
-   npm install
-   ```
+Os dados são consumidos de uma API e armazenados localmente, permitindo que o usuário acompanhe suas plantas mesmo após fechar o aplicativo.
 
-## Executando o Projeto
+---
 
-1. Inicie o servidor de desenvolvimento:
+## ✨ Funcionalidades
 
-   ```bash
-   npm start
-   json-server --watch server.json --host (aqui você coloca seu IP) --port 3333
-   ```
+* Cadastro de plantas
+* Listagem de plantas disponíveis
+* Agendamento de rega
+* Notificações para lembrar de regar
+* Armazenamento local dos dados
+
+---
+
+## 🚀 Melhorias implementadas
+
+* Organização do código em módulos
+* Tipagem com TypeScript
+* Ajustes de layout para melhor usabilidade
+* Estrutura preparada para escalabilidade
+
+---
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto, pude aprofundar conhecimentos em:
+
+* Estruturação de aplicações com React Native
+* Navegação entre telas com React Navigation
+* Consumo de APIs utilizando Axios
+* Gerenciamento de estado na aplicação
+* Persistência de dados com Async Storage
+* Boas práticas de organização de código
+
+---
+
+## 📸 Screenshots
+
+<!-- Adicione aqui imagens do app -->
+
+<!-- Exemplo: -->
+
+<!-- ![Home](./assets/home.png) -->
+
+---
+
+## ⚙️ Como rodar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/ricardocardoso90/react-native-project-plant-manager
+
+# Acesse a pasta
+cd react-native-project-plant-manager
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npx expo start
+```
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins de estudo.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por Ricardo Cardoso
+🔗 https://github.com/ricardocardoso90
