@@ -1,15 +1,11 @@
-import { Routes } from '@/src/routes';
-
 import { useCallback, useEffect } from 'react';
+import { useFonts, Jost_400Regular, Jost_600SemiBold } from '@expo-google-fonts/jost';
+
+import { Routes } from '@/src/routes';
+import { PlantProps } from '@/src/libs/storage';
+
 import * as SplashScreen from 'expo-splash-screen';
 import * as Notifications from 'expo-notifications';
-
-import {
-  useFonts,
-  Jost_400Regular,
-  Jost_600SemiBold
-} from '@expo-google-fonts/jost';
-import { PlantProps } from '@/src/libs/storage';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
