@@ -46,21 +46,18 @@ A aplicação consome dados de uma API (simulada com JSON Server), permitindo li
 
 Durante o desenvolvimento deste projeto, pude aprofundar conhecimentos em:
 
+* Consumo de APIs utilizando Axios
+* Boas práticas de organização de código
+* Persistência de dados com Async Storage
 * Estruturação de aplicações com React Native
 * Navegação entre telas com React Navigation
-* Consumo de APIs utilizando Axios
-* Persistência de dados com Async Storage
-* Boas práticas de organização de código
 
 ---
 
-### 🌐 Servidor (API fake)
+### Servidor (API fake)
 
 Este projeto utiliza o **JSON Server** para simular uma API.
 
 ```bash id="run2"
-# Instale o JSON Server globalmente (caso não tenha)
-npm install -g json-server
-
 # Execute o servidor
 json-server ./src/services/server.json --host 0.0.0.0 --port 3333
